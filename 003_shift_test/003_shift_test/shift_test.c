@@ -3,11 +3,13 @@
 
 int main()
 {
-	short a = 4, b = 4, c = 4, d = 4;
-	a <<= 1;
+	short a = 4;
+	a <<= 2;
+	
+	short b = 5;
 	b >>= 1;
-	c <<= 2;
-	d >>= 2;
-	printf("%hd %hd %hd %hd\n", a,b,c,d);	//½á¹ûÊÇ 8 2 16 1
+	short c = -4;
+	c >>= 2;
+	printf("%hd\n%hd\n", b, c);
 	return 0;
 }

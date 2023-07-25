@@ -1,25 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#include <math.h>
+
 int main()
 {
-    int r = 0;
-    int i = 1;
-    for (; i <= 4; i++)
-    {
-        r += e(i);
-    }
-    printf("%d\n", r);
-    return 0;
-}
-
-int e(x)
-{
-    static int r = 1;
-    if (1 == x)
-        return 1;
-    else
-    {
-        r = x*e(x-1);
-        return r;
-    }
+    int a = 0;
+    int* p = &a;
+    printf("%p\n", p);
+    printf("%p\n", p+1);
+    printf("%p\n", p+2);
 }
